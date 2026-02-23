@@ -1,91 +1,64 @@
-/* center page */
+/* center whole app */
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f6f8;
+  background: #f5f5f5;
 }
 
-/* card layout */
+/* card style */
 .card {
   background: white;
   padding: 30px;
-  border-radius: 10px;
-  width: 400px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h1 {
+/* heading */
+.title {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* form */
-.form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-input {
-  flex: 1;
-  padding: 8px;
+/* input */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
 }
 
-button {
-  padding: 8px 14px;
+/* buttons */
+.btn {
+  padding: 8px 12px;
   border: none;
-  background: #2f80ed;
-  color: white;
   border-radius: 6px;
   cursor: pointer;
+  margin-right: 6px;
 }
 
-button:hover {
-  opacity: 0.9;
+.primary {
+  background: #4caf50;
+  color: white;
 }
 
-/* todo list */
-.list {
-  list-style: none;
-  padding: 0;
+.secondary {
+  background: #2196f3;
+  color: white;
 }
 
+.danger {
+  background: #f44336;
+  color: white;
+}
+
+/* todo row */
 .todo-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-/* checkbox + text */
-.left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* action buttons */
-.actions {
-  display: flex;
-  gap: 8px;
-}
-
-.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-
-/* action buttons */
-.actions {
-  display: flex;
-  gap: 6px;
-}
-
-.delete {
-  background: #eb5757;
+  margin-top: 10px;
 }
